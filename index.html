@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Isaias Ortiz</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            function getEdad(dateString) {
+                let hoy = new Date()
+                let fechaNacimiento = new Date(dateString)
+                let edad = hoy.getFullYear() - fechaNacimiento.getFullYear()
+                let diferenciaMeses = hoy.getMonth() - fechaNacimiento.getMonth()
+                if (
+                    diferenciaMeses < 0 ||
+                    (diferenciaMeses === 0 && hoy.getDate() < fechaNacimiento.getDate())
+                ) {
+                    edad--
+                }
+                return edad
+            }
+        </script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Isaías Ortíz</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Acerca de mí</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Educación</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Intereses</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certificaciones</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Isaías 
+                        <span class="text-secondary">Ortíz</span>
+                    </h1>
+                    <p id="edad"></p>
+                    <div class="subheading mb-5">
+                        Software developer
+                    </div>
+                    <p class="lead mb-5">Desarrollador de sofware con experiencia en <strong> Java, Js, Node.Js,Jquery, TypeScript ,Python, ASP.NET, </strong>Controladores de versiones como <strong>Git, SVN </strong>y conocimiento en <strong>HTML, HTML5, CSS, Bootstrap, Angular y React.</strong></p>
+                    <div class="social-icons">
+                        <a class="social-icon" target="_blank" href="https://sv.linkedin.com/in/isa%C3%ADas-ortiz-1130131a8"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" target="_blank" href="https://github.com/IsaiasOrtiz/"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" target="_blank" href="https://www.facebook.com/JavaDeveloperElSalvador/"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experiencia</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Desarrollador java broker</h3>
+                            <div class="subheading mb-3">Bancoagrícola</div>
+                            <p>Encargado de resolver incidencias en sistemas Java, encargado de desarrollar nuevos flujos Broker para interconectar en AS400 con clientes Java u otros que consuman colas MQ, utilizando metodologia agil SCRUM</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Abril 2021 - Actualidad</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Desarrollador Java</h3>
+                            <div class="subheading mb-3">Creativa consultores(Contrato por proyecto)</div>
+                            <p>Creacion de nuevos desarrollos para sistemas creados en Java, Zk Framework, EJB, JPA, Eclipselink, SQL Server y Payara como servidor de aplicaciones. </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Diciembre 2020 - Abril 2021</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Educación</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Universidad tecnologica de El Salvador</h3>
+                            <div class="subheading mb-3">Ingeniería en sistemas y computación</div>
+                            <p>Egresado de la carrera, entre las tecnologias que aprendí estan: JAVA, .NET, JS, JSF, Hibernate, Php, SQL, Desarrollo movil. </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Enero 2016 - Actualidad</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Instituto nacional</h3>
+                            <div class="subheading mb-3">Bachillerato general</div>
+                        
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Enero 2014 - Diciembre 2015</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Habilidades</h2>
+                    <div class="subheading mb-3">Lenguajes de programacion, Frameworks y herramientas</div>
+                    <ul class="list-inline dev-icons">
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>       
+                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
+                    </ul>
+                    <div class="subheading mb-3">Experiencia</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Desarrolador java con las distintas herramientas del lenguaje como: EJB, JPA, JSF, JSP, Hibernate, EclipseLink, JDBC, ZK Framework, MQ, Spring, desarrollo movil.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Desarrolador web con las siguientes tecnologias: HTML, CSS, Bootstrap, JS, Node.js, JQuery, TypeScript, Express
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Servidores de aplicaciones: Oracle weblogic, Payara, Glassfish, Tomcat y WildFLy.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Bases de datos: SqlServer, MySql, Postgresql, MongoDB y MariaDB.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Metodologia agíl SCRUM
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Intereses</h2>
+                    <p>Ser un desarrollar altamente demandado, dispuesto siempre a tomar nuevos retos y aprender nuevas tecnologias.</p>
+                    <p class="mb-0">Agregando cada dia valor a mi perfil profesional aprendiendo nuevas tecnologias y estar a la banguardia del mundo tecnologico.</p>
+                    <p class="mb-0">Siempre dispuesto a aprender y compartir conocimiento con las personas que no saben porque mi lema es <strong>La mejor manera de aprender es enseñando.!</strong> </p>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Certificaciones</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Programación JAVA Empresarial <a target="_blank" href="./assets/img/Bitlab.pdf">Bitlab</a>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Universidad Java 2021 - De Cero a Experto! <a href="https://www.udemy.com/certificate/UC-28a35093-c3a8-46aa-b843-1bf4885e59d6/">Udemy</a>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Universidad Spring 2021 - Spring Framework y Spring Boot! <a href="https://www.udemy.com/certificate/UC-00a4161b-4ccb-4e58-aa14-02438bbc5ec8/">Udemy</a>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Scrum fundamentals <a href="https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-DouglasIsaiasValleOrtiz-805688.pdf">SCRUM Study</a>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Machine Learning aplicado con lenguaje de programación Python <a target="_blank" href="./assets/img/utec_python.png">Universidad Tecnologica</a>
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-certificate text-warning"></i></span>
+                            Análisis Forense y Manejo de Evidencia Digital<a target="_blank" href="./assets/img/utec_forense.jpeg">Universidad Tecnologica</a>
+                        </li>
+                        
+                            
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <script>
+            document.getElementById("edad").innerHTML = getEdad("1997/07/17 11:30:00") + " Años";
+        </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
