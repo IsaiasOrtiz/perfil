@@ -208,7 +208,13 @@
             </section>
         </div>
         <script>
-            document.getElementById("edad").innerHTML = getEdad("1997/07/17 11:30:00") + " Años";
+            let dia = new Date();
+            let cumple = "";
+            console.log();
+            if((dia).getDate() == 17 && dia.getMonth() == 6){
+                cumple = "<strong>, ahora es mí cumpleaños!! &#x1F389; &#x1F38A; &#x1F388;</strong>";
+            }
+            document.getElementById("edad").innerHTML = getEdad("1997/07/17 11:30:00") + " Años"+cumple;
         </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
